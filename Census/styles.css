@@ -1,0 +1,84 @@
+html,body{
+    font-family:K2D, sans-serif;
+    min-width: 300px;
+    color:#000;
+    background: skyblue;
+    text-align: center;
+  }
+  
+  #main{
+    background-color: rgb(250, 250, 250);
+    margin: 0 auto;
+    width: 75%;
+    max-width: 1000px;
+    padding: 10px;
+    padding-right: 10%;
+  }
+  
+  p{
+    font-style: italic;
+    padding-left: 10%;
+  }
+  
+  .labels{
+    margin: 10px;
+    display: inline-block;
+    text-align: right;
+    width: 30%;
+  }
+  
+  .input-field{
+    padding: 5px;
+    width: 20%;
+  }
+  
+  #occupants {
+    vertical-align:200%;
+  }
+  
+  .dropdowns{
+    padding: 5px;
+    margin: 5px;
+    width: 22.3%;
+  }
+  
+  fieldset{
+    display: inline-block;
+    margin: 5px;
+    text-align: left;
+  }
+  
+  textarea{
+    margin: 10px;
+    vertical-align: -30px;
+    width: 80%;
+    height: 50px;
+  }
+  
+  legend{
+    text-align: center;
+  }
+  
+  #submit {
+    background-color: skyblue;
+    border-radius: 3px;
+    color: black;
+    font-size: 1em;
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+    border: solid 0px;
+  }
+  
+  #occupants-label{
+    margin-left: -10vw;
+  }
+  
+  .alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+  }

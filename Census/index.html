@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+</head>
+<body>    
+      <h1 id="title">Metropolis Census</h1>
+      
+      <div id="main">
+        <p id="description">Help keep Metropolis records up to date!</p>
+        
+        <div class="alert">Your message has been sent</div>
+        
+        <form id="survey-form">
+          
+          <div class="labels">
+            <label id="name-label" for="name">
+              Name: </label> 
+          </div> <input class="input-field" id="name" type="text" name="name" placeholder="Enter your name" required>
+        <br>  
+          <div class="labels">
+            <label id="email-label" for="email">
+              Email: </label> 
+          </div> <input class="input-field" id="email" type="email" name="email" placeholder="Email" required>
+        <br>
+          <div class="labels">
+            <label id="number-label" for="number">
+              Telephone Number: </label> 
+          </div> <input class="input-field" id="number" min="0" max="99999999999" type="number" name="number" placeholder="Phone Number" required>
+          <br>
+          <div class="labels">
+            <label for="age">
+              Age: </label> 
+          </div> <input class="input-field" id="age" min="0" max="130" type="number" name="age" placeholder="Enter your age" required>
+        <br>
+        <div class="labels">
+            <label for="address">
+              Address: </label>
+          </div> <input class="input-field" id="address" type="text" name="address" placeholder="Enter current address" required>
+          <br>
+          <div class="labels">
+            <label for="occupants" id='occupants-label'>
+              How many people are living or staying at this address? </label> 
+          </div> <input class="input-field" id="occupants" min="1" max="1000" type="number" name="occupants" placeholder="Number of residents" required>
+          <br>
+          <div class="labels">
+            <label for="dob">
+              Date of Birth:</label> 
+          </div> <input class="input-field" id="dob" type="date" name="dob" required>
+      <br>
+          <div class="labels">
+            <label for="sex">Sex:</label>
+          </div> <select id="dropdown" name="sex" class="dropdowns">
+            <option disabled value selected>Select an option</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            </select> 
+          <br>
+          <div id="labels">
+            <label for="origin">Are you of Hispanic, Latino, or Spanish origin?</label>
+          </div>
+          <fieldset>
+            <legend>Choose one of the following:</legend>
+            <input id="no" type="radio" name="radio-buttons" class="origins"
+                   value="one"> <label for="no">No, not of Hispanic, Latino, or Spanish origin</label><br>
+            <input id="yesm" type="radio" name="radio-buttons" class="origins"
+                   value="two"> <label for="yesm">Yes, Mexican, Mexican Am., Chicano</label><br>
+            <input id="yespr" type="radio" name="radio-buttons" class="origins"
+                   value="three"> <label for="yespr">Yes, Puerto Rican</label><br>
+            <input id="yesc" type="radio" name="radio-buttons" class="origins"
+                   value="four"> <label for="yesc">Yes, Cuban</label><br>
+            <input id="yeso" type="radio" name="radio-buttons" class="origins"
+                   value="five"> <label for="yeso">Yes, other</label><br>
+              </fieldset>
+          <div id="labels">
+            <label for="race">Race:</label>
+          </div>
+          <fieldset>
+            <legend>Check all that apply:</legend>
+          <input name="races" type="checkbox" value="1" id="race">White</label><br>
+          <input name="races" type="checkbox" value="2" id="race">Black or African Am.</label><br>
+      <input name="races" type="checkbox" value="3" id="race">American Indian or Alaska Native</label><br>
+      <input name="races" type="checkbox" value="4" id="race">Asian Indian</label><br>
+      <input name="races" type="checkbox" value="5" id="race">Japanese</label><br>
+      <input name="races" type="checkbox" value="6" id="race">Native Hawaiin</label><br>
+      <input name="races" type="checkbox" value="7" id="race">Chinese</label><br>
+      <input name="races" type="checkbox" value="8" id="race">Korean</label><br>
+      <input name="races" type="checkbox" value="9" id="race">Guamanian or Chamorro</label><br>
+      <input name="races" type="checkbox" value="10" id="race">Filipino</label><br>
+      <input name="races" type="checkbox" value="11" id="race">Vietnamese</label><br>
+      <input name="races" type="checkbox" value="12" id="race">Samoan</label><br>
+      <input name="races" type="checkbox" value="13" id="race">Other</label><br>
+      </fieldset>
+      <br>
+          <div class="labels">
+              <label for="comments">Comments or Suggestions</label>
+            </div>
+          <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+      <br>
+      <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script src='app.js'></script>      
+</body>
+</html>
